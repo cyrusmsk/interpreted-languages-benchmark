@@ -121,8 +121,5 @@ jobs:
       - name: Print versions
         run: make print-versions
 
-      - name: Run main benchmark
-        run: make run
-
       - name: Run shebang-scripts benchmark
-        run: make run-shebangs
+        run: make run-shebangs --show-output
