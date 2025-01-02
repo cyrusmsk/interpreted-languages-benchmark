@@ -122,4 +122,4 @@ jobs:
         run: make print-versions
 
       - name: Run shebang-scripts benchmark
-        run: make run-shebangs --show-output
+        run: make run-shebangs -i

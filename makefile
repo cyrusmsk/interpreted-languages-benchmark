@@ -78,6 +78,7 @@ run-shebangs:
 	cd shebang-scripts/today \
 	&& hyperfine \
 		--shell none \
+		--show-output \
 		--warmup 10 \
 		--export-json result.json \
 		$$(grep -v '^#' _all_.txt)
